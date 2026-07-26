@@ -2,6 +2,7 @@
   "name": "nobeds-telegram",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "module": "src/index.ts",
   "scripts": {

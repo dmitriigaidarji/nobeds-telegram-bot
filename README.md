@@ -343,3 +343,7 @@ The suite comprises 129 tests.
 - Feeds are polled serially within a single process. This is appropriate for
   tens of links; a substantially larger deployment would require concurrent
   polling and per-feed scheduling.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
