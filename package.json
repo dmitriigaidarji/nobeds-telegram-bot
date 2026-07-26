@@ -1,0 +1,22 @@
+{
+  "name": "nobeds-telegram",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch run src/index.ts",
+    "inspect": "bun run src/inspect.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "deploy": "./deploy.sh"
+  },
+  "dependencies": {
+    "grammy": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "typescript": "^5.6.3"
+  }
+}
