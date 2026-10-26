@@ -26,6 +26,10 @@ module.exports = {
       min_uptime: "30s",
       max_memory_restart: "400M",
 
+      // Daily restart (03:30 UTC, 06:30 Vilnius): CPU and heap creep up over weeks
+      // of uptime, and a fresh process resets them. Polls resume immediately.
+      cron_restart: "30 3 * * *",
+
       // The poll loop persists its snapshot only after every notification is
       // sent, so give SIGINT time to finish an in-flight send rather than
       // killing it mid-notification.
